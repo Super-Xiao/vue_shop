@@ -57,7 +57,7 @@ export default {
           },
         ],
         password: [
-          { required: true, message: "请输入登陆密码", trigger: "blur" },
+          { required: true, message: "请输入登录密码", trigger: "blur" },
           {
             min: 6,
             max: 15,
@@ -82,8 +82,8 @@ export default {
             message: "登录出了一点问题",
             type: "warning",
           });
-         this.$message.success('登陆成功');
-         console.log(res);
+         this.$message.success('登录成功');
+        //  console.log(res);
 
         //  保存token
         window.sessionStorage.setItem('token',res.data.token)
@@ -137,6 +137,6 @@ export default {
 }
 .btns {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 </style>
