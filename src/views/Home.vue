@@ -5,7 +5,7 @@
         <img
           src="https://img2.baidu.com/it/u=15093184,2326945969&fm=26&fmt=auto"
           alt=""
-        /><span>电商管理系统</span>
+        /><span class="span-title">电商管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button></el-header
     >
@@ -96,7 +96,7 @@ export default {
     // 保存活跃链接
     saveNavState(activePath) {
       window.sessionStorage.setItem("activePath", activePath);
-      this.activePath = activePath
+      this.activePath = activePath;
     },
   },
 };
@@ -118,6 +118,8 @@ export default {
     align-items: center;
     span {
       margin-left: 15px;
+      -webkit-text-stroke: 3px rgba(0, 255, 255, 0.233);
+      letter-spacing: 10px;
     }
     img {
       height: 65px;

@@ -46,9 +46,11 @@ export default {};
   margin: 0 auto;
   font-size: 30px;
   margin-bottom: 30px;
-  color: rgb(121, 41, 121);
+  color: #fff;
   background-color: rgb(202, 188, 202);
   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  -webkit-text-stroke: 10px rgba(195, 0, 255, 0.233);
+  letter-spacing: 10px;
 }
 img{
   width: 100%;
